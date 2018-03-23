@@ -5,7 +5,7 @@ Default Tags        d1
 *** Test Cases ***
 Test title
     [Tags]      t1
-    ${x}=       Convert To Binary       12
+    ${x}=       Convert To Binary       14
     Log     ${x}
 
  Test title1
