@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on win32)" generated="20180322 15:33:46.028">
+<suite id="s1" name="Resource" source="C:\Users\schoradia\Desktop\Robot Framework\Day1Training\resource.robot">
+<test id="s1-t1" name="Addition">
+<kw name="Add" library="resourcesupport">
+<arguments>
+<arg>${b}</arg>
+<arg>${d}</arg>
+</arguments>
+<assign>
+<var>${s}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${x} + ${y}</arg>
+</arguments>
+<assign>
+<var>${z}</var>
+</assign>
+<msg timestamp="20180322 15:33:46.268" level="INFO">${z} = 60</msg>
+<status status="PASS" starttime="20180322 15:33:46.267" endtime="20180322 15:33:46.268"></status>
+</kw>
+<msg timestamp="20180322 15:33:46.269" level="INFO">${s} = 60</msg>
+<status status="PASS" starttime="20180322 15:33:46.266" endtime="20180322 15:33:46.269"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${s}</arg>
+<arg>console=true</arg>
+</arguments>
+<msg timestamp="20180322 15:33:46.272" level="INFO">60</msg>
+<status status="PASS" starttime="20180322 15:33:46.271" endtime="20180322 15:33:46.273"></status>
+</kw>
+<status status="PASS" starttime="20180322 15:33:46.264" endtime="20180322 15:33:46.274" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Subtract">
+<kw name="Sub" library="resourcesupport">
+<arguments>
+<arg>${d}</arg>
+<arg>@{a}[1]</arg>
+</arguments>
+<assign>
+<var>${s}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${x} - ${y}</arg>
+</arguments>
+<assign>
+<var>${z}</var>
+</assign>
+<msg timestamp="20180322 15:33:46.280" level="INFO">${z} = 38</msg>
+<status status="PASS" starttime="20180322 15:33:46.279" endtime="20180322 15:33:46.280"></status>
+</kw>
+<msg timestamp="20180322 15:33:46.281" level="INFO">${s} = 38</msg>
+<status status="PASS" starttime="20180322 15:33:46.277" endtime="20180322 15:33:46.281"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${s}</arg>
+<arg>console=true</arg>
+</arguments>
+<msg timestamp="20180322 15:33:46.282" level="INFO">38</msg>
+<status status="PASS" starttime="20180322 15:33:46.281" endtime="20180322 15:33:46.282"></status>
+</kw>
+<status status="PASS" starttime="20180322 15:33:46.276" endtime="20180322 15:33:46.283" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Python">
+<kw name="M 1" library="res1">
+<arguments>
+<arg>9</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${f}</var>
+</assign>
+<msg timestamp="20180322 15:33:46.287" level="INFO">${f} = 910</msg>
+<status status="PASS" starttime="20180322 15:33:46.286" endtime="20180322 15:33:46.287"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${f}</arg>
+</arguments>
+<msg timestamp="20180322 15:33:46.288" level="INFO">910</msg>
+<status status="PASS" starttime="20180322 15:33:46.287" endtime="20180322 15:33:46.288"></status>
+</kw>
+<status status="PASS" starttime="20180322 15:33:46.285" endtime="20180322 15:33:46.289" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180322 15:33:46.051" endtime="20180322 15:33:46.293"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Resource">Resource</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
